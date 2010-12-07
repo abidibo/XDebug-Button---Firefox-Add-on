@@ -1,0 +1,8 @@
+#xdebugbuttonButton {
+  list-style-image:
+  url(chrome://xdebugbutton/skin/icon.png);
+}
+
+toolbar[iconsize="small"] #xdebugbuttonButton {
+  list-style-image: url(chrome://xdebugbutton/skin/icon-small.png);
+}

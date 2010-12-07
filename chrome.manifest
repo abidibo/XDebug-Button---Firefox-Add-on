@@ -1,0 +1,6 @@
+content xdebugbutton content/
+overlay chrome://browser/content/browser.xul chrome://xdebugbutton/content/overlay.xul
+
+skin xdebugbutton classic/1.0 skin/classic/
+style chrome://browser/content/browser.xul chrome://xdebugbutton/skin/overlay.css
+style chrome://global/content/customizeToolbar.xul chrome://xdebugbutton/skin/overlay.css

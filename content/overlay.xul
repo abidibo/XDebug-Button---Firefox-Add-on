@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<overlay id="xdebugbuttonOverlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script type="application/javascript" src="chrome://xdebugbutton/content/main.js"/>  
+  <commandset id="mainCommandSet">
+    <command id="xdebugbuttonCommand" oncommand="myf()" />
+  </commandset>
+  <toolbarpalette id="BrowserToolbarPalette">
+     <toolbarbutton id="xdebugbuttonButton" label="XDebug" class="toolbarbutton-1" command="xdebugbuttonCommand" />
+  </toolbarpalette>
+  <menupopup id="menu_ToolsPopup">
+    <menuitem id="xdebugbuttonMenuitem" label="XDebug" insertbefore="sanitizeSeparator"
+       command="xdebugbuttonCommand" />
+  </menupopup>
+</overlay>

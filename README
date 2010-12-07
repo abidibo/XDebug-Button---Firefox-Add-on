@@ -1,0 +1,22 @@
+------------------------------------------------------------------------------------
+XDebug Button Firefox Add-on
+------------------------------------------------------------------------------------
+This is a very simple firefox addon. It looks at the url of the active tab and
+adds the GET variable required to activate XDebug session.
+
+------------------------------------------------------------------------------------
+HOWTO build the installation package xdebugbutton.xpi
+------------------------------------------------------------------------------------
+1. Create a new chrome directory inside the xdebugbutton directory.
+2. Compress the content, and skin directories, rename the resulting archive xdebugbutton.jar, and place it inside the chrome directory you created in Step 1.
+3. Copy chrome.manifest and rename the backup chrome.manifest.bak.
+4. Change the content of chrome.manifest to be in line with #1.
+5. Zip install.rdf, chrome.manifest, and the chrome folder together, and rename the resulting archive xdebugbutton.xpi.
+
+#1----
+content xdebugbutton jar:chrome/xdebugbutton.jar!/content/
+overlay chrome://browser/content/browser.xul chrome://xdebugbutton/content/overlay.xul
+skin xdebugbutton classic/1.0 jar:chrome/xdebugbutton.jar!/skin/classic/
+style chrome://browser/content/browser.xul chrome://xdebugbutton/skin/overlay.css
+style chrome://global/content/customizeToolbar.xul chrome://xdebugbutton/skin/overlay.css
+---#
