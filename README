@@ -3,6 +3,7 @@ XDebug Button Firefox Add-on
 ------------------------------------------------------------------------------------
 This is a very simple firefox addon. It looks at the url of the active tab and
 adds the GET variable required to activate XDebug session.
+Added Firefox 4 compatibility.
 
 ------------------------------------------------------------------------------------
 HOWTO build the installation package xdebugbutton.xpi
